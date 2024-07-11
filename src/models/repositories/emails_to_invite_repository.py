@@ -28,5 +28,5 @@ class EmailsToInviteRepository:
                 SELECT * FROM emails_to_invite WHERE trip_id = ?
             ''', (trip_id,)
         )
-        trip = cursor.fetchall()
-        return trip
+        emails = cursor.fetchall()
+        return emails
