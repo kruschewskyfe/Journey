@@ -43,6 +43,6 @@ class ParticipantsRepository:
                     SET is_confirmed = 1
                 WHERE
                     id = ?
-            ''', (participant_id)
+            ''', (participant_id,)
         )
         self.__conn.commit()
